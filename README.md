@@ -10,19 +10,17 @@ A simple Flutter boilerplate template made with [ShipFlutter base module](https:
 
 To setup the project and workspace follow these steps:
 
-1. Download project (either from the email or within the builder)
+1. Download/Clone project
 
-2. Unzip and extract contents to your workspace
+1. Open with VSCode or Android Studio
 
-3. Open with VSCode or Android Studio
-
-4. Run setup script
+1. Run setup script
 
     ```bash
-    cd app && sh setup.sh
+    sh setup.sh
     ```
 
-5. The project should run but might not work yet since its missing Firebase configuration. Try it out!
+1. Run the project
 
     ```bash
     flutter run
@@ -35,4 +33,5 @@ You can upgrade the project by building a new version at [builder.shipflutter.co
 or directly purchasing a reduced whitelabel template [here](https://store.shipflutter.com/buy/16402094-1e68-4cb7-94e2-4c18c1057ea2?checkout%5Bdiscount_code%5D=EARLY50).
 
 See it in action:
+
 [![ShipFlutter starer-kit in action](https://img.youtube.com/vi/pV9N09_YzrQ/0.jpg)](https://www.youtube.com/watch?v=pV9N09_YzrQ)
