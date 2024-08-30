@@ -29,8 +29,11 @@ To setup the project and workspace follow these steps:
 ## Upgrade the project
 
 ShipFlutter offers many other modules, like payments, notifications, chatbot powered by Vertex AI and more.
+
 You can upgrade the project by building a new version at [builder.shipflutter.com](https://builder.shipflutter.com)
 or directly purchasing a reduced whitelabel template [here](https://store.shipflutter.com/buy/16402094-1e68-4cb7-94e2-4c18c1057ea2?checkout%5Bdiscount_code%5D=EARLY50).
+
+> A discount of 50% is offered for limited time with `EARLY50` coupon.
 
 See it in action:
 
