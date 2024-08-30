@@ -1,15 +1,11 @@
-import 'dart:async';
-
 import 'package:context_watch/context_watch.dart';
 import 'package:context_watch_signals/context_watch_signals.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lite_ref/lite_ref.dart';
-import 'package:flutter_template/env/app_env.dart';
 import 'package:flutter_template/i18n/translations.g.dart';
 import 'package:flutter_template/app.dart';
-import 'package:flutter_template/modules/base/logger.dart';
 import 'package:flutter_template/modules/base/preferences.dart';
 
 void main() async {
