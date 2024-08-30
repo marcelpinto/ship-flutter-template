@@ -1,4 +1,4 @@
-# Flutter template
+# Flutter template by ShipFlutter
 
 A simple Flutter boilerplate template made with [ShipFlutter base module](https://shipflutter.com/modules/#base-module). Contains the main structure with state management (signals), dependency injection (lite_ref) and others (theme, slang, etc..).
 
@@ -38,3 +38,5 @@ or directly purchasing a reduced whitelabel template [here](https://store.shipfl
 See it in action:
 
 [![ShipFlutter starer-kit in action](https://img.youtube.com/vi/pV9N09_YzrQ/0.jpg)](https://www.youtube.com/watch?v=pV9N09_YzrQ)
+
+Created with ❤ by [pibi.studio](https://pibi.studio)
