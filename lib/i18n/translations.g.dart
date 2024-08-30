@@ -6,7 +6,7 @@
 /// Locales: 1
 /// Strings: 50
 ///
-/// Built on 2024-08-30 at 14:41 UTC
+/// Built on 2024-08-30 at 14:54 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -274,7 +274,7 @@ class _TranslationsOnboardingEn {
 	String get hero_title_end => TranslationOverrides.string(_root.$meta, 'onboarding.hero_title_end', {}) ?? 'Flutter template Tutorial end title';
 	String get hero_text_end => TranslationOverrides.string(_root.$meta, 'onboarding.hero_text_end', {}) ?? 'Create an account now to enjoy all the features';
 	String get skip => TranslationOverrides.string(_root.$meta, 'onboarding.skip', {}) ?? 'Skip';
-	String get login => TranslationOverrides.string(_root.$meta, 'onboarding.login', {}) ?? 'Register now';
+	String get login => TranslationOverrides.string(_root.$meta, 'onboarding.login', {}) ?? 'Continue';
 	String get not_now => TranslationOverrides.string(_root.$meta, 'onboarding.not_now', {}) ?? 'Not now';
 }
 
@@ -358,7 +358,7 @@ extension on Translations {
 			case 'onboarding.hero_title_end': return TranslationOverrides.string(_root.$meta, 'onboarding.hero_title_end', {}) ?? 'Flutter template Tutorial end title';
 			case 'onboarding.hero_text_end': return TranslationOverrides.string(_root.$meta, 'onboarding.hero_text_end', {}) ?? 'Create an account now to enjoy all the features';
 			case 'onboarding.skip': return TranslationOverrides.string(_root.$meta, 'onboarding.skip', {}) ?? 'Skip';
-			case 'onboarding.login': return TranslationOverrides.string(_root.$meta, 'onboarding.login', {}) ?? 'Register now';
+			case 'onboarding.login': return TranslationOverrides.string(_root.$meta, 'onboarding.login', {}) ?? 'Continue';
 			case 'onboarding.not_now': return TranslationOverrides.string(_root.$meta, 'onboarding.not_now', {}) ?? 'Not now';
 			default: return null;
 		}
