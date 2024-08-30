@@ -15,7 +15,7 @@ jobs:
           channel: "stable"
 
       - name: Get dependencies
-        run: cd app && flutter pub get && dart run build_runner build --delete-conflicting-outputs --release
+        run: flutter pub get && dart run build_runner build --delete-conflicting-outputs --release
 
       - name: Build Flutter web
-        run: cd app && flutter build web --web-renderer canvaskit
+        run: flutter build web --web-renderer canvaskit

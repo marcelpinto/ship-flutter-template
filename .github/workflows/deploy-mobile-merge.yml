@@ -24,7 +24,7 @@ jobs:
           base64 -d keystore-b64.txt > $SIGNING_KEY_STORE_PATH
 
       - name: Get dependencies
-        run: cd app && flutter pub get && dart run build_runner build --delete-conflicting-outputs --release
+        run: flutter pub get && dart run build_runner build --delete-conflicting-outputs --release
 
       - name: Build Release App bundle
         env:
@@ -32,7 +32,7 @@ jobs:
           SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
           SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
-        run: cd app && flutter build appbundle
+        run: flutter build appbundle
         
       # TODO: iOS build
 
@@ -40,11 +40,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: release-android
-          path: app/build/app/outputs/bundle/app.aab
+          path: build/app/outputs/bundle/app.aab
 
       - name: Create Github Release
         uses: softprops/action-gh-release@v2
         with:
           generate_release_notes: true
           prerelease: true
-          files: app/build/app/outputs/bundle/app.aab
+          files: build/app/outputs/bundle/app.aab
