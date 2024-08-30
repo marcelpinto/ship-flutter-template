@@ -104,13 +104,6 @@
 
     <!-- Flutter bootstrap script. Do not delete -->
     <script src="flutter_bootstrap.js" async>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-          navigator.serviceWorker.register('firebase-messaging-sw.js', {
-            scope: '/firebase-cloud-messaging-push-scope',
-          });
-        });
-      }
     </script>
 
   </body>
