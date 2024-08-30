@@ -1,6 +1,8 @@
 import 'package:context_watch_signals/context_watch_signals.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_template/modules/base/preferences.dart';
+import 'package:flutter_template/modules/onboarding/onboarding_route.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_template/i18n/translations.g.dart';
 import 'package:flutter_template/modules/base/about/about_route.dart';
@@ -27,6 +29,10 @@ class _MainAppState extends State<MainApp> {
     _config = createRouter(
       initialLocation: HomeRoute.path,
       redirect: (context, state) async {
+        final prefs = await preferences.instance;
+        if (prefs.getBool("onboarding") != true) {
+          return OnboardingRoute.path;
+        }
         return null;
       },
       navigationRoutes: [
@@ -35,6 +41,7 @@ class _MainAppState extends State<MainApp> {
         SettingsRoute(),
       ],
       otherRoutes: [
+        OnboardingRoute(),
       ],
     );
     super.initState();
