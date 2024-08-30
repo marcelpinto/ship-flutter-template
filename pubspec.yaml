@@ -1,0 +1,101 @@
+name: flutter_template
+description: "An open source project to show Flutter base template of ShipFlutter project. It shows best practices and base structure"
+
+# Prevent accidental publishing to pub.dev.
+publish_to: "none"
+
+version: 1.1.0+1
+
+environment:
+  sdk: ">=3.3.3 <4.0.0"
+
+dependencies:
+  # Core dependencies
+  another_flushbar: ^1.12.30
+  async: ^2.11.0
+  collection: ^1.18.0
+  context_watch: ^5.0.0
+  context_watch_signals: ^2.0.0
+  delayed_display: ^2.0.0
+  dio: ^5.6.0
+  dio_cache_interceptor: ^3.5.0
+  envied: ^0.5.4
+  flutter:
+    sdk: flutter
+  flutter_adaptive_scaffold: ^0.2.2
+  flutter_colorpicker: ^1.1.0
+  flutter_localizations:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  freezed_annotation: ^2.4.4
+  go_router: ^14.2.6
+  in_app_review: ^2.0.9
+  json_annotation: ^4.9.0
+  lite_ref: ^0.8.1
+  logger: ^2.4.0
+  rive: ^0.13.12
+  share_plus: ^9.0.0
+  shared_preferences: ^2.3.2
+  skeletonizer: ^1.4.2
+  slang: ^3.31.1
+  slang_flutter: ^3.31.0
+  universal_html: ^2.2.4
+  universal_io: ^2.2.2
+  url_launcher: ^6.3.0
+  vector_graphics: ^1.1.11
+  permission_handler: ^11.3.1
+  # Modules dependencies
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
+  # If you want to control the initialization of your app move this to dependencies
+  # https://pub.dev/packages/flutter_native_splash#3-set-up-app-initialization-optional
+  flutter_native_splash: ^2.4.1
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.12
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+  signals_lint: ^5.0.0
+  custom_lint: ^0.5.11
+  slang_gpt: ^0.10.3
+  vector_graphics_compiler: ^1.1.11
+  envied_generator: ^0.5.4
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
+    - assets/rive/
+    # Add svg to the svg folder to apply the transformation to all of them.
+    # See https://docs.flutter.dev/ui/assets/asset-transformation
+    - path: assets/svg/
+      transformers:
+        - package: vector_graphics_compiler
+
+# Whenever you change and icon, run `flutter pub run flutter_launcher_icons`
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon-512-maskable.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/images/icon-512.png"
+
+# Whenever you change the theme, run `dart run flutter_native_splash:create`
+# Read docs for more information: https://pub.dev/packages/flutter_native_splash
+flutter_native_splash:
+  color: "#00B4D8"
+  android_12:
+    color: "#00B4D8"
+  image: "assets/images/icon-512.png"
+  # The web splash is done manually in the index.html
+  web: false
+  fullscreen: true

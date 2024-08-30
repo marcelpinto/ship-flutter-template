@@ -1,0 +1,10 @@
+targets:
+  $default:
+    builders:
+      envied_generator|envied:
+        options:
+          path: .env.debug
+          override: true
+        release_options:
+          path: .env
+          override: true
