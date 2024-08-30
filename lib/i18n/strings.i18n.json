@@ -1,0 +1,68 @@
+{
+  "app_name": "ShipFlutter template",
+  "privacy_url": "https://shipflutter.com/privacy",
+  "terms_url": "https://shipflutter.com/terms",
+  "support_url": "https://shipflutter.com/#contact",
+  "rate_url": "https://shipflutter.com/#feedback",
+  "cancel": "Cancel",
+  "retry": "Retry",
+  "errors": {
+    "generic_title": "Oops...",
+    "generic_text": "Something went wrong",
+    "network_title": "Hmmm...",
+    "network_text": "The operation failed. Do you have connection?",
+    "error_view": {
+      "title": "Argh... :(",
+      "content": "We are really sorry, but something went wrong and we could not display the view. You can restart the app or try to navigate back home",
+      "back": "Go Home",
+      "exit": "Exit"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "ShipFlutter template",
+    "subtitle": "Ship everywhere with Flutter. Fast!",
+    "details_title": "Details",
+    "cta": {
+      "title": "Bootstrap your app",
+      "button": "Try now",
+      "content": "Use our AI-powered builder to generate and customize your project.",
+      "link": "https://builder.shipflutter.com"
+    }
+  },
+  "about": {
+    "title": "👋 Hi there!",
+    "learn_more": "Learn more",
+    "learn_more_url(ignore)": "https://pibi.studio",
+    "intro_title": "About us",
+    "intro_content": "We are ex-Googlers, GDEs and experts from top companies helping Founders and Makers build high-quality consumer apps.",
+    "purpose_title": "Our purpose",
+    "purpose_content": "We build our own consumer apps with our tools and expertise. The same quality is offered to our clients. We built this template to show Flutter base template of ShipFlutter project. It shows best practices and base structure",
+    "hint_title": "Did you know...",
+    "hint_content": "ShipFlutter is more than a boilerplate. It's a fully customizable starter kit to seamlessly launch responsive Android, iOS, and Web apps with Flutter powered by Firebase and Vertex AI."
+  },
+  "settings": {
+    "title": "Settings",
+    "theme_mode": "Light/Dark mode",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of service",
+    "support": "Support",
+    "rate": "Rate us",
+    "feedback": "Share feedback",
+    "disconnect": "Disconnect",
+    "delete": "Delete account"
+  },
+  "onboarding": {
+    "hero_title_start": "Welcome to ShipFlutter template!",
+    "hero_text_start": "A base template to show Flutter power",
+    "hero_title_end": "Flutter template Tutorial end title",
+    "hero_text_end": "Create an account now to enjoy all the features",
+    "skip": "Skip",
+    "login": "Register now",
+    "not_now": "Not now"
+  }
+}

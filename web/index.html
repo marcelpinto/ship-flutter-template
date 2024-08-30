@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+    <base href="$FLUTTER_BASE_HREF" />
+
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="description"
+      content="An open source project to show Flutter base template of ShipFlutter project. It shows best practices and base structure"
+    />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Flutter template" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <title>Flutter template</title>
+    <link rel="manifest" href="manifest.json" />
+
+
+
+    <style>
+      body {
+        inset: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        background-color: #f9f5f6;
+      }
+      body.light {
+        background-color: #f9f5f6;
+      }
+
+      body.dark {
+        background-color: #202023;
+      }
+
+      #loading {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+      }
+
+      #loading img {
+        animation: 1s ease-in-out 0s infinite alternate breathe;
+        opacity: 0.66;
+        transition: opacity 0.4s;
+      }
+
+      @keyframes breathe {
+        from {
+          transform: scale(1);
+        }
+
+        to {
+          transform: scale(0.95);
+        }
+      }
+
+      @keyframes zooooom {
+        from {
+          transform: scale(1);
+        }
+
+        to {
+          transform: scale(0.01);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var queryParams = new URLSearchParams(window.location.search);
+
+      // Set the theme from the URL param, with fallback to user preference if no theme is
+      // specified.
+      var theme = queryParams.get("brightness");
+      theme ||= window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+      document.body.classList.add(theme);
+    </script>
+
+    <!-- Flutter bootstrap script. Do not delete -->
+    <script src="flutter_bootstrap.js" async>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('firebase-messaging-sw.js', {
+            scope: '/firebase-cloud-messaging-push-scope',
+          });
+        });
+      }
+    </script>
+
+  </body>
+</html>
