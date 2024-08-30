@@ -63,11 +63,6 @@ class _MainAppState extends State<MainApp> {
       locale: TranslationProvider.of(context).flutterLocale, // use provider
       supportedLocales: AppLocaleUtils.supportedLocales,
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
-      // Use AppLocalizations to configure the correct application title
-      // depending on the user's locale.
-      //
-      // The appTitle is defined in .arb files found in the localization
-      // directory.
       onGenerateTitle: (BuildContext context) => context.t.app_name,
 
       // Define a light and dark color theme. Then, read the user's
