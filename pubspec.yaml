@@ -39,7 +39,7 @@ dependencies:
   shared_preferences: ^2.3.2
   skeletonizer: ^1.4.2
   slang: ^3.31.1
-  slang_flutter: ^3.31.0
+  slang_flutter: ^3.32.0
   universal_html: ^2.2.4
   universal_io: ^2.2.2
   url_launcher: ^6.3.0
