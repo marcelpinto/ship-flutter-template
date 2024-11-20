@@ -226,26 +226,26 @@ packages:
     dependency: "direct main"
     description:
       name: context_watch
-      sha256: f65024ec7a518c79b0e7ace6ca6c0557ba78c25b3b169c8370d5c59dbd3c263e
+      sha256: "5dd37a2e40c3088487d8e85170b52afd110ccf0ee3d35159138a89dfd1a018d3"
       url: "https://pub.dev"
     source: hosted
-    version: "5.0.1"
+    version: "5.1.2"
   context_watch_base:
     dependency: transitive
     description:
       name: context_watch_base
-      sha256: "3ab04862604010796b4ee85c619029168db0c0f8f6304346b7c41666d33e7540"
+      sha256: "3116155e09eefb270464b3b4fbd609c5b852693899d72d7bebe5e34918c72ba0"
       url: "https://pub.dev"
     source: hosted
-    version: "5.0.0"
+    version: "6.0.2"
   context_watch_signals:
     dependency: "direct main"
     description:
       name: context_watch_signals
-      sha256: aca8db99f8c547cb29ac05f8a52cc4d03424fce2b05d7163d6617b0a8c8983be
+      sha256: "55045c68befd89bd9171d05484e5cb4810d27f18bd36a07cd08ac90c0973c6af"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0"
+    version: "3.0.3"
   convert:
     dependency: transitive
     description:
@@ -1330,10 +1330,10 @@ packages:
     dependency: transitive
     description:
       name: vm_service
-      sha256: f652077d0bdf60abe4c1f6377448e8655008eef28f128bc023f7b5e8dfeb48fc
+      sha256: "5c5f338a667b4c644744b661f309fb8080bb94b18a7e91ef1dbd343bed00ed6d"
       url: "https://pub.dev"
     source: hosted
-    version: "14.2.4"
+    version: "14.2.5"
   watcher:
     dependency: transitive
     description:
