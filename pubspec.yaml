@@ -34,7 +34,7 @@ dependencies:
   json_annotation: ^4.9.0
   lite_ref: ^0.8.1
   logger: ^2.4.0
-  rive: ^0.13.12
+  rive: ^0.13.17
   share_plus: ^9.0.0
   shared_preferences: ^2.3.2
   skeletonizer: ^1.4.2
